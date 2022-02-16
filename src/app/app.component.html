@@ -5,6 +5,21 @@
     .body{
       background-color: grey;
     }
+    img.card-img-top{
+      height: 300px;
+      width: 300px;
+      margin-left: 100px;
+    }
+    h5.card-title{
+      margin-left: 100px;
+    }
+    p.card-text{
+      margin-left: 100px;
+
+    }
+    div.col{
+      margin-bottom: 15px;
+    }
   </style>
   <title>Search Your Book</title>
   <meta charset="utf-8">
@@ -16,17 +31,41 @@
 </head>
 <body> 
   <div class="container">
-    <input type="text" placeholder="Enter book to Search" name="search" id="search-input" />
-    <button type="button" class="btn-primary" id="search-button" value="Search"></button>
-  </div>
+    <input type="text" class="form-control form-control-lg" placeholder="Enter the book or author name" name="search" id="search-input">
+    <button type="button" class="btn btn-outline-secondary" id="search-button">Search</button>  </div>
   <br />
-  <div class="container" *ngFor = "let item of bookslist">
-    <div class="card bg">
-      <div class="card-body text-center">
-        <img src={{item.image}} height="350" width="350"/>
-        <p class="bookname"> Name: {{item.name}}</p>
-        <p class="bookauthor">Author: {{item.author}}</p>
-        <p class="bookauthor">Rating: {{item.book_stars}}</p>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor = "let item of bookslist">
+      <div class="card h-100">
+        <img src={{item.image}} class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">Name: {{item.name}}</h5>
+          <p class="card-text">Author: {{item.author}}<br/>
+            Rating: {{item.book_stars}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="col" *ngFor= "let item1 of teen_bookslist">
+      <div class="card h-100">
+        <img src={{item1.image}} class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">Name: {{item1.name}}</h5>
+          <p class="card-text">Author: {{item1.author}}<br/>
+            Rating: {{item1.book_stars}}</p>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="col" *ngFor= "let item2 of fantasybookslist">
+      <div class="card h-100">
+        <img src={{item2.image}} class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">Name: {{item2.name}}</h5>
+          <p class="card-text">Author: {{item2.author}}<br />
+            Rating: {{item2.book_stars}}</p>
+        </div>
       </div>
     </div>
   </div>

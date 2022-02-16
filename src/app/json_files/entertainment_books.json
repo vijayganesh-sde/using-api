@@ -1,12 +1,5 @@
 [
   {
-    "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
-    "name": "Fantastic Beasts and Where to Find Them",
-    "author": "J. K. Rowling",
-    "book_stars": 4.5,
-    "img_paths": "dataset/Entertainment/0000001.jpg"
-  },
-  {
     "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408711705.jpg",
     "name": "Fantastic Beasts: The Crimes of Grindelwald - The Original Screenplay",
     "author": "J.K. Rowling",
@@ -33,13 +26,6 @@
     "author": "Eric Taylor",
     "book_stars": 4,
     "img_paths": "dataset/Entertainment/0000005.jpg"
-  },
-  {
-    "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7515/9780751535662.jpg",
-    "name": "Scar Tissue",
-    "author": "Anthony Kiedis",
-    "book_stars": 4,
-    "img_paths": "dataset/Entertainment/0000006.jpg"
   },
   {
     "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/8771/9780877180128.jpg",
